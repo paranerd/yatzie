@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html>
+<head>
+<title> Yatzie </title>
+<link rel="stylesheet" href="yatzie.css" />
+</head>
+
+<body onload="initPlayer(2);">
+	<div id="optionsContainer">
+		<div class="options">1er</div>
+		<div class="options">2er</div>
+		<div class="options">3er</div>
+		<div class="options">4er</div>
+		<div class="options">5er</div>
+		<div class="options">6er</div>
+		<div class="options">Summe</div>
+		<div class="options">Bonus</div>
+		<div class="options">Dreier Pasch</div>
+		<div class="options">Vierer Pasch</div>
+		<div class="options">Full House</div>
+		<div class="options">Kleine Strasse</div>
+		<div class="options">Grosse Strasse</div>
+		<div class="options">Yatzie</div>
+		<div class="options">Chance</div>
+		<div class="options">Gesamt</div>
+	</div>
+
+	<div id="wuerfelContainer">
+		<div id="wuerfel0" class="wuerfel" onclick="toggleKeep(0);"></div>
+		<div id="wuerfel1" class="wuerfel" onclick="toggleKeep(1);"></div>
+		<div id="wuerfel2" class="wuerfel" onclick="toggleKeep(2);"></div>
+		<div id="wuerfel3" class="wuerfel" onclick="toggleKeep(3);"></div>
+		<div id="wuerfel4" class="wuerfel" onclick="toggleKeep(4);"></div>
+	</div>
+
+	<!--<div id="playerContainer"></div>-->
+	<button id="rollDice" onclick="rollDice();">Roll Dice!</button>
+
+<!--
+	<script src="js/jquery-1.8.3.min.js"></script>
+-->
+	<script src="js/yatzie.js"></script>
+</body>
+</html>
